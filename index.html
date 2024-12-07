@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Registro de Visitas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Registro de Visitas</h1>
+    </header>
+
+    <main>
+        <section id="registro">
+            <h2>Registrar Visita</h2>
+            <form id="registroForm">
+                <div class="campo">
+                    <label for="nombre">Nombre del Visitante:</label>
+                    <input type="text" id="nombre" placeholder="Ejemplo: Juan Pérez" required>
+                </div>
+                <div class="campo">
+                    <label for="motivo">Motivo de la Visita:</label>
+                    <input type="text" id="motivo" placeholder="Ejemplo: Entrevista" required>
+                </div>
+                <div class="campo">
+                    <label for="hora">Hora de Ingreso:</label>
+                    <input type="time" id="hora" required>
+                </div>
+                <button type="button" id="registrar">Registrar</button>
+            </form>
+        </section>
+
+        <section id="tabla">
+            <h2>Lista de Visitantes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Motivo</th>
+                        <th>Hora</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="listaVisitas">
+                    <!-- Registros dinámicos -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sistema de Registro de Visitas</p>
+    <
+
